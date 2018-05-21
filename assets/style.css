@@ -1,0 +1,39 @@
+.imgContainer {
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    top: 20px; 
+    left: 250px; 
+    width: 100%; 
+    color: white;
+    font-size: 100px;
+    text-shadow: 2px 2px grey;
+}
+
+h3 {
+    position: absolute;
+    top: 220px; 
+    left: 170px; 
+    width: 100%;
+    color: white;
+    font-size: 40px;
+    text-shadow: 2px 2px grey;
+}
+
+.start {
+    position: absolute;
+    top: 420px;
+    left: 480px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 30px;
+    color: white;
+    background-color: grey;
+    font-weight: bold;
+}
+
+.start:hover {
+    background-color: darkgrey; /* Green */
+}
