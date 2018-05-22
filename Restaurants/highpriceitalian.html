@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>Display a popup on click</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+
+    <style>
+        body {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        #map {
+            position: absolute;
+            top: 15%;
+            left: 40%;
+            width: 600px;
+            height: 400px;
+        }
+
+        h1 {
+            position: absolute;
+            top: 5%;
+            left: 2%;
+            font-size: 40px;
+        }
+
+        .container {
+            position: absolute;
+            top: 15%;
+            left: 2%;
+            width: 400px;
+            margin: 10px 0;
+        }
+
+        .table {
+            position: absolute;
+            padding: 20px;
+            top: 80%;
+            width: 100%;
+            text-align: left;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Iron Gate</h1>
+    <div class="container">
+        <p>Our restaurant offers multiple menu options nightly in our Dining Room as well as our Outdoor Patio and Garden. The seating for reservations is on a first come first serve basis for each location. Guests can choose from either an à la carte menu that has varying small plates and family style platters, a 5-course Tasting menu ($99 per person, additional $70 for beverage pairings,) or a 3-course Family Table menu ($59 per person, for groups of 2 or more.) Our menus change frequently based on the availability of seasonal & local ingredients, and we will do our best to customize it based on dietary restrictions & preferences.</p>
+        <p>1734 N St NW, Washington, DC 20036</p>
+    </div>
+
+    <div id='map'></div>
+
+<p class="table">Make your reservation now on <a href="https://www.opentable.com/r/iron-gate-washington?p=2&sd=2018-05-22+19%3A00&page=1">OpenTable</a>!</p>
+
+    <script>
+        var mymap = L.map('map').setView([38.9070697,-77.03985009999996], 16);
+
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox.streets',
+            accessToken: 'pk.eyJ1IjoiZGJtYXBzIiwiYSI6ImNqaGhyOTYxdDA1b3ozN21wa3lrOGZhd3oifQ.SrxRIF-dQhhq4VrrSklflA'
+        }).addTo(mymap);
+
+        var marker = L.marker([38.9070697,-77.03985009999996]).addTo(mymap);
+
+    </script>
+
+</body>
+
+</html>

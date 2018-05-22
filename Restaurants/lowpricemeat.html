@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>Display a popup on click</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+
+    <style>
+        body {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        #map {
+            position: absolute;
+            top: 15%;
+            left: 40%;
+            width: 600px;
+            height: 400px;
+        }
+
+        h1 {
+            position: absolute;
+            top: 5%;
+            left: 2%;
+            font-size: 40px;
+        }
+
+        .container {
+            position: absolute;
+            top: 15%;
+            left: 2%;
+            width: 400px;
+            margin: 10px 0;
+        }
+
+        .table {
+            position: absolute;
+            padding: 20px;
+            top: 80%;
+            width: 100%;
+            text-align: left;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Bobby Van's Grill</h1>
+    <div class="container">
+        <p>Bobby Van’s Grill marks the return of the powerful New York City chop shop to the downtown D.C. area but with a new twist. This eclectic New American Steakhouse now boasts a slightly more casual family friendly atmosphere as well as catering to the Washington politician. This 536-seat D.C. destination is fully loaded! There’s four private, intimate and upscale dining rooms with their own bar and bar services. Two 40-foot long bars can be found with friendly bartenders serving strong drinks and even stronger conversations. The main dining room boasts views of both New York Avenue and the plush marble atrium of the adjoining building amidst its beautiful water fountain. This is an ideal place to meet for power lunches, family gatherings and late night dinners in a relaxed and friendly atmosphere.</p>
+        <p>1201 New York Avenue Northeast, Washington, DC, USA</p>
+    </div>
+
+    <div id='map'></div>
+
+<p class="table">Make your reservation now on <a href="https://www.opentable.com/r/bobby-vans-grill-new-york-ave-washington?p=2&sd=2018-05-22+19%3A00&page=1">OpenTable</a>!</p>
+
+    <script>
+        var mymap = L.map('map').setView([38.9008735,-77.02864970000001], 16);
+
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox.streets',
+            accessToken: 'pk.eyJ1IjoiZGJtYXBzIiwiYSI6ImNqaGhyOTYxdDA1b3ozN21wa3lrOGZhd3oifQ.SrxRIF-dQhhq4VrrSklflA'
+        }).addTo(mymap);
+
+        var marker = L.marker([38.9008735,-77.02864970000001]).addTo(mymap);
+
+    </script>
+
+</body>
+
+</html>

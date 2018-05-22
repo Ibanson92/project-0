@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>Display a popup on click</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+
+    <style>
+        body {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        #map {
+            position: absolute;
+            top: 15%;
+            left: 40%;
+            width: 600px;
+            height: 400px;
+        }
+
+        h1 {
+            position: absolute;
+            top: 5%;
+            left: 2%;
+            font-size: 40px;
+        }
+
+        .container {
+            position: absolute;
+            top: 15%;
+            left: 2%;
+            width: 400px;
+            margin: 10px 0;
+        }
+
+        .table {
+            position: absolute;
+            padding: 20px;
+            top: 80%;
+            width: 100%;
+            text-align: left;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>il Canale</h1>
+    <div class="container">
+        <p>Located in the heart of Georgetown, il Canale offers the most authentic Neapolitan pizza in DC, thin-crust made by our Italian pizzaiolos cooked in a wood-fired oven imported from Italy. The kitchen offers a menu that brings our native country to your table with every selection—antipasti, pastas, seafood, meat, fresh bufala mozzarella from Italy, and much more. The attractive blue-lit, full bar specializes in select Italian wines. In warm weather, dine alfresco at the sidewalk tables or on the roof-top terrazza overlooking the Georgetown scene.</p>
+        <p>
+        Be sure to check out our lunch menu, featuring delicious paninis made with our fresh bread baked instantly in our wood fire brick oven and four new pasta items. Our happy hour, from 4-7 pm Monday-Friday, features all drinks at 1/2 price! (Happy Hour restricted to bar area).</p>
+        <p>1065 31st NW Washington, DC 20007 </p>
+    </div>
+
+    <div id='map'></div>
+
+<p class="table">Make your reservation now on <a href="https://www.opentable.com/r/il-canale-washington?p=2&sd=2018-05-22+19%3A00&page=1">OpenTable</a>!</p>
+
+    <script>
+        var mymap = L.map('map').setView([38.9044867,-77.06096609999997], 16);
+
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox.streets',
+            accessToken: 'pk.eyJ1IjoiZGJtYXBzIiwiYSI6ImNqaGhyOTYxdDA1b3ozN21wa3lrOGZhd3oifQ.SrxRIF-dQhhq4VrrSklflA'
+        }).addTo(mymap);
+
+        var marker = L.marker([38.9044867,-77.06096609999997]).addTo(mymap);
+
+    </script>
+
+</body>
+
+</html>
