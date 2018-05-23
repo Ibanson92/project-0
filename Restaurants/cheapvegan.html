@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>Display a popup on click</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+
+    <style>
+        body {
+            margin: 20px;
+            padding: 20px;
+            background: black;
+        }
+
+         p {
+            color: white;
+        }
+
+        a {
+            color: white;
+        }
+
+        #map {
+            position: absolute;
+            top: 15%;
+            left: 40%;
+            width: 600px;
+            height: 400px;
+        }
+
+        h1 {
+            position: absolute;
+            top: 5%;
+            left: 2%;
+            font-size: 40px;
+            color: white;
+        }
+
+        .container {
+            position: absolute;
+            top: 15%;
+            left: 2%;
+            width: 400px;
+            margin: 10px 0;
+        }
+
+        .table {
+            position: absolute;
+            padding: 20px;
+            top: 80%;
+            width: 100%;
+            text-align: left;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Etete</h1>
+    <div class="container">
+        <p>Warm chic decor, and creative cuisine, Chef Christopher Roberson has
+            collaborated with the original chef owner 'Etete' , ensuring he incorporated her special spices in his dishes, and he continues to serve her most popular classics. Try the Injera Tacos, Crispy Green Lentil Rolls, Berbere Short Rib, Derek Tibs. Crafted cocktails infused with Global spices and Tej Honey Wine. Happy Hour Monday thru Friday with Sliders, Sweet Spicy WIngs and Berbere Fries. </p>
+        <p>1942 9th St NW, Washington, DC 20001</p>
+    </div>
+
+    <div id='map'></div>
+
+    <a class="table" href="../question.html">Go back to Quiz</a>
+
+    <script>
+        var mymap = L.map('map').setView([38.9167494,-77.02422849999999], 16);
+
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox.streets',
+            accessToken: 'pk.eyJ1IjoiZGJtYXBzIiwiYSI6ImNqaGhyOTYxdDA1b3ozN21wa3lrOGZhd3oifQ.SrxRIF-dQhhq4VrrSklflA'
+        }).addTo(mymap);
+
+        var marker = L.marker([38.9167494,-77.02422849999999]).addTo(mymap);
+
+    </script>
+
+</body>
+
+</html>
