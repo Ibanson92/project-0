@@ -36,7 +36,7 @@ body {
     height: 100vh;
 }
 
-/* .imgContainer {
+.imgContainer {}
 body {
     background-color: black;
 }
@@ -61,8 +61,8 @@ body {
 .choice-text {
     text-align: center;
 }
-*/
-img {
+
+.quest {
     height: 250px;
     margin: 30px 30px 0px 70px;
     border: 1px solid black;
@@ -110,18 +110,12 @@ h1 {
     text-shadow: 2px 2px grey;
 }
 
-img {
+.dine {
     float: left;
     margin-right: 40px;
-<<<<<<< HEAD
     height: 340px;
     width: 45%;
     margin-top: 10px;
-=======
-    /* height: 340px; */
-    width: 45%;
-    /* margin-top: 10px; */
->>>>>>> master
 }
 
 .h1 {
@@ -133,7 +127,6 @@ img {
     color: black;
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-<<<<<<< HEAD
 }
 h3 {
     position: absolute;
@@ -155,12 +148,10 @@ h3 {
     color: white;
     background-color: grey;
     font-weight: bold;
-=======
 }
 
 .food {
     width: 120%;
->>>>>>> master
 }
 
 .media-content {}
