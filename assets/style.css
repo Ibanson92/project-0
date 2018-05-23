@@ -9,6 +9,10 @@ container {
 .question-block {
 }
 
+#front {
+    width: 100%;
+}
+
 .question {
     margin-left: 50px;
     color: white;
@@ -30,7 +34,7 @@ container {
     text-align: center;
 }
 
-img {
+.quest {
     height: 250px;
     margin: 30px 30px 0px 70px;
     border: 1px solid black;
