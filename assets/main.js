@@ -34,3 +34,14 @@ $('#submit').on("click", function() {
 }) //end submit.on click function
 
 }); //end document.ready function
+
+var mcd
+
+var mymap = mcd.map('mapid').setView([38.900473, -77.029306], 13);
+
+mcd.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{13}/{38.900473}/{y}.png?access_token={pk.eyJ1IjoieWlya2x1bSIsImEiOiJjamhnanFydGMxbHJzMzZudGlxdWhkc2ZiIn0.exn3t9JRfw--ei6w9NX8Lw}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'your.mapbox.access.token'
+}).addTo(mymap);

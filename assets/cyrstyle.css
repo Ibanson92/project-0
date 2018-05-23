@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+}    
+    
+container {
+    margin: 0 auto;
+}
+
+.question-block {
+}
+
+.question {
+    margin-left: 50px;
+    color: white;
+    margin-top: 50px;
+}
+
+.choices {
+    border: 3px solid red;
+    width: 70%;
+    margin-left: 50px;
+    background-color: white;
+}
+
+.choice-block {
+    border: 1px solid black;
+}
+
+.choice-text {
+    text-align: center;
+}
+
+img {
+    height: 250px;
+    margin: 30px 30px 0px 70px;
+    border: 1px solid black;
+}
+
+.row {
+    display: inline-block;
+}
+
+.choice-block img {
+}
+
+#submit {
+    margin-left: 50px;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
