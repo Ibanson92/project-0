@@ -44,40 +44,40 @@ $('#submit').on("click", function() {
     console.log(valueTotal);
 
     if (valueTotal == 1111 || valueTotalx == 1111) {
-        location.href = "restaurants/cheapitalian.html";
+        location.href = "pasta1.html";
     };
     if (valueTotal == 1121 || valueTotalx == 1121) {
-        location.href = "restaurants/cheapseafood.html";
+        location.href = "sea1.html";
     };
     if (valueTotal == 1131 || valueTotalx == 1131) {
-        location.href = "restaurants/cheapmeat.html";
+        location.href = "meat1.html";
     }; 
     if (valueTotal == 1141 || valueTotalx == 1141) {
-        location.href = "restaurants/cheapvegan.html";
+        location.href = "vegan1.html";
     };
     if (valueTotal == 2111 || valueTotalx == 2111) {
-        location.href = "restaurants/lowpriceitalian.html";
+        location.href = "pasta2.html";
     }; 
     if (valueTotal == 2121 || valueTotalx == 2121) {
-        location.href = "restaurants/lowpricesea.html";
+        location.href = "sea2.html";
     };
     if (valueTotal == 2131 || valueTotalx == 2131) {
-        location.href = "restaurants/lowpricemeat.html";
+        location.href = "meat2.html";
     };
     if (valueTotal == 2141 || valueTotalx == 2141) {
-        location.href = "restaurants/lowpricevegan.html";
+        location.href = "vegan2.html";
     };
     if (valueTotal == 3111 || valueTotalx == 3111) {
-        location.href = "restaurants/highpriceitalian.html";
+        location.href = "pasta3.html";
     };
     if (valueTotal == 3121 || valueTotalx == 3121) {
-        location.href = "restaurants/highpricesea.html";
+        location.href = "sea3.html";
     };
     if (valueTotal == 3131 || valueTotalx == 3131) {
-        location.href = "restaurants/highpricemeat.html";
+        location.href = "meat3.html";
     };
     if (valueTotal == 3141 || valueTotalx == 3141) {
-        location.href = "restaurants/highpricevegan.html";
+        location.href = "vegan3.html";
     };
     if (valueTotal == 1112 || valueTotalx == 1112 || valueTotal == 2112 || valueTotalx == 2112 || valueTotal == 3112 || valueTotalx == 3112 || valueTotal == 1122 || valueTotalx == 1122 || valueTotal == 1132 || valueTotalx == 1132 || valueTotal == 1142 || valueTotalx == 1142 || valueTotal == 2112 || valueTotalx == 2112 || valueTotal == 2122 || valueTotalx == 2122 || valueTotal == 2132 || valueTotalx == 2132 || valueTotal == 2142 || valueTotalx == 2142 || valueTotal == 3112 || valueTotalx == 3112 || valueTotal == 3122 || valueTotalx == 3122 || valueTotal == 3132 || valueTotalx == 3132 || valueTotal == 3142 || valueTotalx == 3142) {
         location.href = "party.html";
