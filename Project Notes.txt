@@ -3,25 +3,62 @@ User
 Questions:
 
 How much do you want to spend?
+
 1. Less than $20
+
 2. Between $20 and $50
-3. Between $50 and $100.00
+
+3. Between $50 and $100
 4. Money is no object.
 
+
 Why are you going to eat?
+
 1. Business
+
 2. Date
+
 3. Bored
+
 4. Group outing
 
+
 What type of food do you like?
+
 1. Pasta
+
 2. Seafood
-3. Meats
-4. Vegan
+
+3. Spicy
+4. Asian
+
 
 What mood are you in?
+
 1. Grumpy
+
 2. Happy
+
 3. Sad
+
 4. Supercalifragilisticexpialidocious
+
+cheap italian restaurant
+inexpensive italian restaurant
+pricy intalian restaurant
+exclusive italian restaurant
+
+cheap seafood restaurant
+inexpensive seafood restaurant
+pricy seafood restaurant
+exclusive seafood restaurant
+
+cheap south american restaurant
+inexpensive south american restaurant
+pricy south american restaurant
+exclusive south american restaurant
+
+cheap asian restaurant
+inexpensive asian restaurant
+pricy asian restaurant
+exclusive asian restaurant
