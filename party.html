@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
-    <script src="assets/main.js"></script>
-</head>
-<body class="party">
-
-    <h2>Stay Home and Party!</h2>
-
-    <h4>Site authors: Christina, Ian, and Daniel</h4>
-
-    <img class="penuts" src="https://media.giphy.com/media/5xaOcLGvzHxDKjufnLW/giphy.gif">
-    <img class="wb" src="https://media.giphy.com/media/10UeedrT5MIfPG/giphy.gif">
-
-    <a class="restart" href="question.html">Restart the Quiz</a>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Page Title</title>
+        
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+        <script src="assets/main.js"></script>
+    </head>
     
-</body>
+    <body class="party">
+        <p class="party-title"><span id="match">Your Restaurant Match: </span> None! <span id="moving-word">Stay Home and Party!</span></p>
+
+        <div class="authors">
+            <h4>Site authors: Christina, Ian, and Daniel</h4>
+        </div>
+        
+        <div class="retry">
+            <button class="restart" type="button" onclick="window.location.href='question.html'">Try Again!</button>
+        </div>
+    
+        <div class="dancing">
+            <img class="top-gifs" src="assets/images/peanuts-dance.gif">
+            <img class="top-gifs" src="assets/images/jerry-dance.gif">
+            <img class="gifs" src="assets/images/bob-teddy-dance.gif">
+            <img class="gifs" src="assets/images/francine-klaus.gif">
+        </div>
+    </body>
 </html>
