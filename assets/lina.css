@@ -31,12 +31,12 @@ a:link.Explore{
 
 } */
 
-html {
-    /* min-height: 100% !important; */
-    /* height: 100%; */
+/* html {
+    min-height: 100% !important;
+    height: 100%;
     margin: 0;
     padding: 0;
-}
+} */
 
 #title {
     padding-bottom: 5px;
@@ -44,7 +44,7 @@ html {
 
 body {
     background-color: black;
-    height: 100vh;
+    height: 120vh;
 }
 
 /* .imgContainer {
@@ -78,10 +78,15 @@ body {
     
 }
 #button2{
-    margin-left: 570px;
+    padding: 5px;
+    /* margin-left: 570px; */
     outline-color: black;
     border-color: black;
-    margin-top: 120px;
+    /* margin-top: 120px; */
+    position: relative;
+    left: 150px;
+    /* margin-bottom: 120px; */
+    
 }
 
 a:hover.button {color: yellow;
